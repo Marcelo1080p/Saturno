@@ -1,0 +1,50 @@
+.containerStar {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: StarAnimate infinite alternate;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 16px;
+  filter: blur(1px);
+}
+
+.star2 {
+  position: absolute;
+  background-color: #ffff;
+  width: 90px;
+  filter: blur(1px);
+  border-radius: 16px;
+}
+
+.star3 {
+  position: absolute;
+  background-color: #fff;
+  filter: blur(1px);
+  transform: rotate(40deg);
+  border-radius: 16px;
+}
+
+.star4 {
+  position: absolute;
+  background-color: #fff;
+  filter: blur(1px);
+  border-radius: 16px;
+  transform: rotate(-40deg);
+}
+
+
+@keyframes StarAnimate {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
